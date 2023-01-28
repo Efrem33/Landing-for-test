@@ -1,0 +1,22 @@
+{
+  "name": "landing_logotype",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Efrem33/Landing-for-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Efrem33/Landing-for-test/issues"
+  },
+  "homepage": "https://github.com/Efrem33/Landing-for-test#readme",
+  "devDependencies": {
+    "json-server": "^0.17.1"
+  }
+}
