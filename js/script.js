@@ -191,14 +191,20 @@ window.addEventListener('DOMContentLoaded', () => {
     return await res.json();
   };
 
-  getResource('http://localhost:3000/menu')
-    .then(data => {
-      console.log(data);
-      data.forEach(({img, altimg, title, descr, price}) => {
+  // getResource('http://localhost:3000/menu')
+  //   .then(data => {
+  //     data.forEach(({img, altimg, title, descr, price}) => {
+  //       new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
+  //     });
+  //   });
+
+  axios.get('http://localhost:3000/menu')
+    .then( data => {
+      data.data.forEach(({img, altimg, title, descr, price}) => {
         new MenuCard(img, altimg, title, descr, price, '.menu .container').render();
       });
     });
-
+    
   //Forms
 
   const forms  = document.querySelectorAll('form');
