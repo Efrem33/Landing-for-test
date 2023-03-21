@@ -70,4 +70,4 @@ function cardsClasses(){
     
 }
 
-module.exports = cardsClasses();
+export default cardsClasses;

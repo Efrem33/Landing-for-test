@@ -19,5 +19,8 @@
   "devDependencies": {
     "json-server": "^0.17.1",
     "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "jshint": "^2.13.6"
   }
 }
