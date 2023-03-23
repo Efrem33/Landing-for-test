@@ -12,6 +12,7 @@ function showModal(modalSelector, modalTimerId) {
 
 function closeModal(modalSelector) {
   const modal = document.querySelector(modalSelector);
+  
   modal.style.display = 'none';
   document.body.style.overflow = '';
 }

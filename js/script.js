@@ -11,11 +11,11 @@ import { showModal } from './modules/modal';
 window.addEventListener('DOMContentLoaded', () => {
   const modalTimerId = setTimeout( () => showModal('.modal', modalTimerId), 50000);
 
-  tabs();
+  tabs('.tabheader__item', '.tabcontent', '.tabheader__items', 'tabheader__item_active');
   modal('[data-modal]', '.modal', modalTimerId);
   calculator();
   cardsClasses();
-  forms();
+  forms('form', modalTimerId);
   slider();
   timer();
 });
