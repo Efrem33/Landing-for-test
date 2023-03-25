@@ -1,14 +1,25 @@
-function slider() {
-  // Slider
-  const slides = document.querySelectorAll('.offer__slide'),
-        slider = document.querySelector('.offer__slider'),
-        prev = document.querySelector('.offer__slider-prev'),
-        next = document.querySelector('.offer__slider-next'),
-        total = document.querySelector('#total'),
-        current = document.querySelector('#current'),
-        slidesWraer = document.querySelector('.offer__slider-wrapper'),
-        slidesField = document.querySelector('.offer__slider-inner'),
-        width = window.getComputedStyle(slidesWraer).width;
+function slider({
+
+  contaiter, 
+  slide, 
+  nextArrow, 
+  prevArrow, 
+  totalCounter, 
+  currentCounter, 
+  wrapper, 
+  field
+
+}) {
+  
+  const slides = document.querySelectorAll(slide),
+        slider = document.querySelector(contaiter),
+        prev = document.querySelector(prevArrow),
+        next = document.querySelector(nextArrow),
+        total = document.querySelector(totalCounter),
+        current = document.querySelector(currentCounter),
+        slidesWrapper = document.querySelector(wrapper),
+        slidesField = document.querySelector(field),
+        width = window.getComputedStyle(slidesWrapper).width;
 
   let slideIndex = 1;
   let offset = 0;
@@ -25,7 +36,7 @@ function slider() {
   slidesField.style.display = 'flex';
   slidesField.style.transition = '0.5s all';
 
-  slidesWraer.style.overflow = 'hidden';
+  slidesWrapper.style.overflow = 'hidden';
 
   slides.forEach(slide => {
     slide.style.width = width;

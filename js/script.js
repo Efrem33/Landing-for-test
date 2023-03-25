@@ -16,7 +16,16 @@ window.addEventListener('DOMContentLoaded', () => {
   calculator();
   cardsClasses();
   forms('form', modalTimerId);
-  slider();
-  timer();
+  slider({
+    contaiter: '.offer__slider',
+    slide: '.offer__slide',
+    nextArrow: '.offer__slider-next',
+    prevArrow: '.offer__slider-prev',
+    totalCounter: '#total',
+    currentCounter: '#current',
+    wrapper: '.offer__slider-wrapper',
+    field: '.offer__slider-inner',
+  });
+  timer('.timer', "2023-05-20");
 });
 

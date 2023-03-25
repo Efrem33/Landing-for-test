@@ -1,6 +1,4 @@
-function timer(){
-  //Timer
-  const dadline = "2023-05-20";
+function timer(id, dadline){
 
   function getTimeRemaining(endTime){
     const t = Date.parse(endTime) - Date.parse(new Date()),
@@ -62,7 +60,7 @@ function timer(){
     }
   }
 
-  setClock('.timer', dadline);
+  setClock(id, dadline);
 }
 
 export default timer;
